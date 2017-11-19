@@ -51,6 +51,14 @@ app.get('/about',(req,res)=>{
     });
 });
 
+app.get('/project',(req,res)=>{
+    res.render('projectPage.hbs',{
+        pageTitle:'Project Page Dynamic',
+        projectContent:'Content of the project'
+    });
+});
+
+
 app.listen(port,()=>{
    console.log(`Server is up on the port ${port}`)
 });
